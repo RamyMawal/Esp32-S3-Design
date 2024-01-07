@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 3.4,
+          "width": 2.48
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -116,7 +116,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.1016,
+        "min_clearance": 0.19999999999999998,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.024999999999999998,
         "min_hole_clearance": 0.25,
@@ -128,7 +128,7 @@
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.19999999999999998,
-        "min_track_width": 0.1016,
+        "min_track_width": 0.19999999999999998,
         "min_via_annular_width": 0.13,
         "min_via_diameter": 0.44999999999999996,
         "solder_mask_clearance": 0.0,
@@ -180,9 +180,10 @@
         0.0,
         0.1016,
         0.127,
-        0.2032,
-        0.254,
-        0.3048,
+        0.2,
+        0.25,
+        0.3,
+        0.349,
         0.3556,
         0.508,
         0.762,
@@ -196,24 +197,8 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.42,
-          "drill": 0.2
-        },
-        {
-          "diameter": 0.47,
-          "drill": 0.2
-        },
-        {
           "diameter": 0.6,
-          "drill": 0.3
-        },
-        {
-          "diameter": 0.6858,
-          "drill": 0.3302
-        },
-        {
-          "diameter": 0.889,
-          "drill": 0.381
+          "drill": 0.35
         }
       ],
       "zones_allow_external_fillets": false
@@ -449,13 +434,30 @@
       {
         "bus_width": 12,
         "clearance": 0.2,
-        "diff_pair_gap": 0.25,
+        "diff_pair_gap": 0.2032,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.286,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.286,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Differential",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
