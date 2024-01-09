@@ -2969,7 +2969,7 @@
 
   (footprint "MountingHole:MountingHole_4.3mm_M4" (layer "F.Cu")
     (tstamp 8327b7e7-99d1-4328-9c35-3967ca2f30c9)
-    (at 105.075 105.8)
+    (at 88.9 101.6)
     (descr "Mounting Hole 4.3mm, no annular, M4")
     (tags "mounting hole 4.3mm no annular m4")
     (property "Field2" "")
@@ -7216,12 +7216,8 @@
     )
   )
 
-  (gr_line (start 133.9 37.725) (end 225.875 37.75)
-    (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp 043f51d0-be38-485a-80a7-5c4174e91239))
   (gr_line (start 133.9 37.725) (end 133.9 31.8)
     (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp 4435b7ed-1c3b-47d3-8d10-1648a56a09ad))
-  (gr_line (start 225.875 37.75) (end 85.85 37.75)
-    (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp 470794e9-9f5e-442c-88be-9f450a054896))
   (gr_line (start 149.4 31.8) (end 149.4 37.8)
     (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp 916f6715-f4f4-45b9-b45d-2db882f59d19))
   (gr_line (start 133.9 31.8) (end 149.4 31.8)
