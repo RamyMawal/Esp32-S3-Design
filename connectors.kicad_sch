@@ -5,6 +5,82 @@
   (paper "A4")
 
   (lib_symbols
+    (symbol "Connector:Conn_01x03_Socket" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "Conn_01x03_Socket" (at 0 -5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_locked" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "ki_keywords" "connector" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Generic connector, single row, 01x03, script generated" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Conn_01x03_Socket_1_1"
+        (arc (start 0 -2.032) (mid -0.5058 -2.54) (end 0 -3.048)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 -2.54)
+            (xy -0.508 -2.54)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 0)
+            (xy -0.508 0)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 2.54)
+            (xy -0.508 2.54)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (arc (start 0 0.508) (mid -0.5058 0) (end 0 -0.508)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (arc (start 0 3.048) (mid -0.5058 2.54) (end 0 2.032)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (pin passive line (at -5.08 2.54 0) (length 3.81)
+          (name "Pin_1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 0 0) (length 3.81)
+          (name "Pin_2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 -2.54 0) (length 3.81)
+          (name "Pin_3" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Connector:Conn_01x11_Socket" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 15.24 0)
         (effects (font (size 1.27 1.27)))
@@ -977,6 +1053,58 @@
         )
       )
     )
+    (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+3V3" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+3V3\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+3V3_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+3V3_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+3V3" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "power:+5V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -1137,6 +1265,10 @@
     (stroke (width 0) (type default))
     (uuid 1d8f08ac-bd71-41d7-bf95-56bbcde4186b)
   )
+  (wire (pts (xy 194.31 69.85) (xy 196.85 69.85))
+    (stroke (width 0) (type default))
+    (uuid 206b7fd2-a8bf-47c3-b93d-c30ee3b7a13e)
+  )
   (wire (pts (xy 59.69 40.64) (xy 85.09 40.64))
     (stroke (width 0) (type default))
     (uuid 228efca1-493b-43ff-8264-da0a88cf9f8f)
@@ -1156,6 +1288,10 @@
   (wire (pts (xy 189.23 54.61) (xy 191.77 54.61))
     (stroke (width 0) (type default))
     (uuid 3449f4c0-bca7-4f11-928a-9e514edbafad)
+  )
+  (wire (pts (xy 189.23 74.93) (xy 196.85 74.93))
+    (stroke (width 0) (type default))
+    (uuid 347b9a8f-705f-4e9c-b757-89518ce13370)
   )
   (wire (pts (xy 68.58 80.01) (xy 68.58 73.66))
     (stroke (width 0) (type default))
@@ -1228,6 +1364,10 @@
   (wire (pts (xy 195.58 123.19) (xy 201.93 123.19))
     (stroke (width 0) (type default))
     (uuid 6bcfa48a-964c-4792-8254-5f26fc9b8fed)
+  )
+  (wire (pts (xy 189.23 69.85) (xy 189.23 72.39))
+    (stroke (width 0) (type default))
+    (uuid 71567c28-a71d-457b-8887-af015f28892e)
   )
   (wire (pts (xy 59.69 88.9) (xy 68.58 88.9))
     (stroke (width 0) (type default))
@@ -1388,6 +1528,10 @@
   (wire (pts (xy 39.37 86.36) (xy 41.91 86.36))
     (stroke (width 0) (type default))
     (uuid f46e6f75-0ec2-41d3-b6d0-a177928bca29)
+  )
+  (wire (pts (xy 189.23 72.39) (xy 196.85 72.39))
+    (stroke (width 0) (type default))
+    (uuid f92bb6ab-8ef3-4b56-a3c4-fc91a883c7ec)
   )
   (wire (pts (xy 195.58 118.11) (xy 201.93 118.11))
     (stroke (width 0) (type default))
@@ -1683,7 +1827,7 @@
   (symbol (lib_id "Device:R_Small") (at 68.58 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1bbbc1aa-4e25-4ceb-a4d8-1f7f9374075e)
-    (property "Reference" "R6" (at 71.12 81.915 0)
+    (property "Reference" "R3" (at 71.12 81.915 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "5k1" (at 71.12 84.455 0)
@@ -1699,9 +1843,6 @@
     (pin "2" (uuid 957ff2b0-706b-40a3-b793-26e41c86ce2b))
     (instances
       (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
-          (reference "R6") (unit 1)
-        )
         (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66/4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f"
           (reference "R3") (unit 1)
         )
@@ -1712,7 +1853,7 @@
   (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 242.57 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 27820d20-4ab6-465a-be6d-cb16fd762b5f)
-    (property "Reference" "J4" (at 245.11 71.755 0)
+    (property "Reference" "J2" (at 245.11 71.755 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Power_Input" (at 245.11 74.295 0)
@@ -1728,9 +1869,6 @@
     (pin "2" (uuid 4b2ce7bc-ae2f-4fd2-bf2e-25988c9e0308))
     (instances
       (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
-          (reference "J4") (unit 1)
-        )
         (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66/4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f"
           (reference "J2") (unit 1)
         )
@@ -1761,9 +1899,6 @@
     (pin "6" (uuid fb9ddac8-46b7-47a9-8c02-29379d66a496))
     (instances
       (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
-          (reference "U3") (unit 1)
-        )
         (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66/4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f"
           (reference "U3") (unit 1)
         )
@@ -1774,7 +1909,7 @@
   (symbol (lib_id "power:GND") (at 41.91 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 438b7182-b6a1-4a6f-a353-27df2951fb3c)
-    (property "Reference" "#PWR016" (at 41.91 99.06 0)
+    (property "Reference" "#PWR012" (at 41.91 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 41.91 97.79 0)
@@ -1789,9 +1924,6 @@
     (pin "1" (uuid 4cec008a-8bea-4067-b079-59b13c15e87d))
     (instances
       (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
-          (reference "#PWR016") (unit 1)
-        )
         (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66/4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f"
           (reference "#PWR012") (unit 1)
         )
@@ -1896,7 +2028,7 @@
   (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 247.65 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 723aca5b-8bdb-4af3-a5b2-b9cb8138b00f)
-    (property "Reference" "J3" (at 250.19 53.975 0)
+    (property "Reference" "J7" (at 250.19 53.975 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MOTOR_4_OUTPUT" (at 250.19 56.515 0)
@@ -1912,9 +2044,6 @@
     (pin "2" (uuid 7552c8d5-f8a2-41fd-8b32-8c7a70d7f005))
     (instances
       (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
-          (reference "J3") (unit 1)
-        )
         (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66/4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f"
           (reference "J7") (unit 1)
         )
@@ -1946,10 +2075,37 @@
     )
   )
 
+  (symbol (lib_id "Connector:Conn_01x03_Socket") (at 201.93 72.39 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 734066cd-d618-49f5-b30c-8fe2ecad5811)
+    (property "Reference" "J8" (at 203.2 71.12 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Conn_01x03_Socket" (at 203.2 73.66 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" (at 201.93 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 201.93 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "3" (uuid 3a68f8ce-32b0-48bb-b2b7-9cad6f72edd0))
+    (pin "2" (uuid 5956b0d4-7b39-40f8-98d5-289d4228c198))
+    (pin "1" (uuid 0b6d3cee-9fd5-4bf8-8686-8b0fd7c4c563))
+    (instances
+      (project "RC-Car-Controller"
+        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66/4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f"
+          (reference "J8") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 196.85 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 75b50cb3-d11d-477a-af71-d21de47673a8)
-    (property "Reference" "J2" (at 199.39 43.815 0)
+    (property "Reference" "J4" (at 199.39 43.815 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MOTOR_1_OUTPUT" (at 199.39 46.355 0)
@@ -1965,11 +2121,33 @@
     (pin "2" (uuid 9e0b803e-dc0d-4b57-bc11-742afbc25924))
     (instances
       (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
-          (reference "J2") (unit 1)
-        )
         (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66/4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f"
           (reference "J4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 189.23 74.93 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 7bc32b69-678a-4f9c-8495-57069cf8409f)
+    (property "Reference" "#PWR076" (at 189.23 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 189.23 80.01 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 189.23 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 189.23 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f325ba0a-703d-42dc-a8e1-20971ecdf089))
+    (instances
+      (project "RC-Car-Controller"
+        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66/4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f"
+          (reference "#PWR076") (unit 1)
         )
       )
     )
@@ -1994,9 +2172,6 @@
     (pin "2" (uuid 89934fc5-7710-40fb-bc6f-0bfb9449e34b))
     (instances
       (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
-          (reference "D4") (unit 1)
-        )
         (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66/4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f"
           (reference "D4") (unit 1)
         )
@@ -2007,7 +2182,7 @@
   (symbol (lib_id "power:GND") (at 229.87 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 89311309-f954-4624-a871-eb20ea5c27a4)
-    (property "Reference" "#PWR049" (at 229.87 71.12 0)
+    (property "Reference" "#PWR016" (at 229.87 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 229.87 69.85 0)
@@ -2022,9 +2197,6 @@
     (pin "1" (uuid 3a56b423-116e-4754-9d46-6283c2816b4e))
     (instances
       (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
-          (reference "#PWR049") (unit 1)
-        )
         (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66/4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f"
           (reference "#PWR016") (unit 1)
         )
@@ -2035,7 +2207,7 @@
   (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 196.85 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 95f108c9-049d-425e-b2e2-16d928cf3858)
-    (property "Reference" "J3" (at 199.39 52.705 0)
+    (property "Reference" "J5" (at 199.39 52.705 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MOTOR_2_OUTPUT" (at 199.39 55.245 0)
@@ -2051,9 +2223,6 @@
     (pin "2" (uuid 05113a10-31a4-4cf7-ba9f-0282fb47bf87))
     (instances
       (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
-          (reference "J3") (unit 1)
-        )
         (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66/4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f"
           (reference "J5") (unit 1)
         )
@@ -2064,7 +2233,7 @@
   (symbol (lib_id "Device:R_Small") (at 59.69 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9789d7b4-203d-453d-935d-c86f4b05b3be)
-    (property "Reference" "R5" (at 62.23 81.915 0)
+    (property "Reference" "R2" (at 62.23 81.915 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "5k1" (at 62.23 84.455 0)
@@ -2080,9 +2249,6 @@
     (pin "2" (uuid 18e5490d-633d-4ae3-8cf6-22834fc1f937))
     (instances
       (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
-          (reference "R5") (unit 1)
-        )
         (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66/4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f"
           (reference "R2") (unit 1)
         )
@@ -2093,7 +2259,7 @@
   (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 247.65 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a6077d1d-afe1-4e2a-be93-9c9b311b38bc)
-    (property "Reference" "J3" (at 250.19 43.815 0)
+    (property "Reference" "J6" (at 250.19 43.815 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MOTOR_3_OUTPUT" (at 250.19 46.355 0)
@@ -2109,11 +2275,58 @@
     (pin "2" (uuid 1861babe-9cf6-418d-8c12-1da23d6c57bf))
     (instances
       (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
-          (reference "J3") (unit 1)
-        )
         (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66/4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f"
           (reference "J6") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+5V") (at 189.23 69.85 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid ab6e8ea7-0f2e-4a16-88ba-ec97e859a3b4)
+    (property "Reference" "#PWR075" (at 189.23 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5V" (at 189.23 64.77 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 189.23 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 189.23 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 49f95ee6-47ec-4c49-ad6b-c252bd1ab861))
+    (instances
+      (project "RC-Car-Controller"
+        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66/4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f"
+          (reference "#PWR075") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3V3") (at 194.31 69.85 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid d028148f-0e3b-43b1-b201-50c5f8fdf768)
+    (property "Reference" "#PWR074" (at 194.31 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 194.31 64.77 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 194.31 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 194.31 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3c93725b-6302-4176-a4f6-0e6d0000385e))
+    (instances
+      (project "RC-Car-Controller"
+        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66/4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f"
+          (reference "#PWR074") (unit 1)
         )
       )
     )
@@ -2153,9 +2366,6 @@
     (pin "S1" (uuid 63f00b17-70a8-4797-8b8d-52b5cd0b1492))
     (instances
       (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
-          (reference "J1") (unit 1)
-        )
         (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66/4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f"
           (reference "J1") (unit 1)
         )
@@ -2166,7 +2376,7 @@
   (symbol (lib_id "power:+36V") (at 229.87 77.47 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e2fa5976-6e59-4018-97f4-a1c191e4df33)
-    (property "Reference" "#PWR031" (at 229.87 81.28 0)
+    (property "Reference" "#PWR015" (at 229.87 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+36V" (at 229.87 73.66 0)
@@ -2181,9 +2391,6 @@
     (pin "1" (uuid f59b5c0a-cb18-4eee-b230-faaf20c392fc))
     (instances
       (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
-          (reference "#PWR031") (unit 1)
-        )
         (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66/4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f"
           (reference "#PWR015") (unit 1)
         )
@@ -2194,7 +2401,7 @@
   (symbol (lib_id "power:GND") (at 143.51 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e8e3bbb4-b2a9-41c3-878b-2ef5f914f2ad)
-    (property "Reference" "#PWR017" (at 143.51 64.77 0)
+    (property "Reference" "#PWR014" (at 143.51 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 143.51 63.5 0)
@@ -2209,9 +2416,6 @@
     (pin "1" (uuid 175951c0-6fac-4e58-a9c2-c01ccaddb762))
     (instances
       (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
-          (reference "#PWR017") (unit 1)
-        )
         (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66/4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f"
           (reference "#PWR014") (unit 1)
         )
@@ -2270,7 +2474,7 @@
   (symbol (lib_id "power:+5V") (at 104.14 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f9968795-6b29-4550-96c0-165b2c7f19f5)
-    (property "Reference" "#PWR018" (at 104.14 44.45 0)
+    (property "Reference" "#PWR013" (at 104.14 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 104.14 36.83 0)
@@ -2285,9 +2489,6 @@
     (pin "1" (uuid d63591eb-6609-44b7-ae1f-65c30a3cc164))
     (instances
       (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
-          (reference "#PWR018") (unit 1)
-        )
         (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66/4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f"
           (reference "#PWR013") (unit 1)
         )
