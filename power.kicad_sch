@@ -1712,7 +1712,7 @@
   )
 
   (symbol (lib_id "Device:D_Schottky") (at 125.73 142.24 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid d6df7805-37ac-4f9c-b9c6-677beb797527)
     (property "Reference" "D1" (at 128.27 141.2875 90)
       (effects (font (size 1.27 1.27)) (justify left))
