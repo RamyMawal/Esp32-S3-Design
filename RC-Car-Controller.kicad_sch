@@ -1,139 +1,306 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 6532ed18-dd14-44a4-a4f8-6383f8135b66)
-
-  (paper "A2")
-
-  (title_block
-    (title "RamyMawal-18-09-2023")
-  )
-
-  (lib_symbols
-  )
-
-
-  (text "Motor Drivers" (at 353.06 234.95 0)
-    (effects (font (size 12 12)) (justify left bottom))
-    (uuid 06a4dd10-bfcb-46b6-bca6-79bc102b15f2)
-  )
-  (text "Sensors" (at 106.68 237.49 0)
-    (effects (font (size 12 12)) (justify left bottom))
-    (uuid 67e41f45-e4aa-429a-9f1b-e174ba90748e)
-  )
-  (text "Controller\n" (at 400.05 57.15 0)
-    (effects (font (size 12 12)) (justify left bottom))
-    (uuid 82734d6b-7770-4579-91b3-784c3706b5ec)
-  )
-  (text "Connectors" (at 231.14 58.42 0)
-    (effects (font (size 12 12)) (justify left bottom))
-    (uuid 882148b8-df13-4940-a9c8-f32536301cf2)
-  )
-  (text "Power" (at 78.74 57.15 0)
-    (effects (font (size 12 12)) (justify left bottom))
-    (uuid 91564359-495f-4a69-9f8e-0449db86f5b0)
-  )
-
-  (sheet (at 27.94 64.77) (size 149.86 87.63) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 39f09781-d99c-4d1b-913d-bcdf98fd1e26)
-    (property "Sheetname" "Power" (at 27.94 64.0584 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "power.kicad_sch" (at 27.94 152.9846 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (property "Field2" "" (at 27.94 64.77 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66" (page "2"))
-      )
-    )
-  )
-
-  (sheet (at 222.25 63.5) (size 125.73 74.93) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f)
-    (property "Sheetname" "Connectors" (at 222.25 62.7884 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "connectors.kicad_sch" (at 222.25 139.0146 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (property "Field2" "" (at 222.25 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66" (page "3"))
-      )
-    )
-  )
-
-  (sheet (at 377.19 66.04) (size 129.54 69.85) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 6dcf9c84-99b8-44d2-ad7c-5bce24334811)
-    (property "Sheetname" "ESP32-S3 Microcontroller " (at 377.19 65.3284 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "ESP32_S3_MCU.kicad_sch" (at 377.19 136.4746 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (property "Field2" "" (at 377.19 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66" (page "5"))
-      )
-    )
-  )
-
-  (sheet (at 64.77 243.84) (size 151.13 85.09) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 7627e0c1-a993-485b-b38b-14ad3d8f424c)
-    (property "Sheetname" "Sensors" (at 64.77 243.1284 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "sensors.kicad_sch" (at 64.77 329.5146 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (property "Field2" "" (at 64.77 243.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66" (page "4"))
-      )
-    )
-  )
-
-  (sheet (at 361.95 245.11) (size 101.6 71.12) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid e7259fa7-f322-44a4-a973-0690db2883d4)
-    (property "Sheetname" "Motors" (at 361.95 244.3984 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "motors.kicad_sch" (at 361.95 316.8146 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (property "Field2" "" (at 361.95 245.11 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "RC-Car-Controller"
-        (path "/6532ed18-dd14-44a4-a4f8-6383f8135b66" (page "6"))
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "6532ed18-dd14-44a4-a4f8-6383f8135b66")
+	(paper "A2")
+	(title_block
+		(title "RamyMawal-18-09-2023")
+	)
+	(lib_symbols)
+	(text "Motor Drivers"
+		(exclude_from_sim no)
+		(at 298.45 231.14 0)
+		(effects
+			(font
+				(size 12 12)
+			)
+			(justify left bottom)
+		)
+		(uuid "06a4dd10-bfcb-46b6-bca6-79bc102b15f2")
+	)
+	(text "Sensors"
+		(exclude_from_sim no)
+		(at 160.02 229.87 0)
+		(effects
+			(font
+				(size 12 12)
+			)
+			(justify left bottom)
+		)
+		(uuid "67e41f45-e4aa-429a-9f1b-e174ba90748e")
+	)
+	(text "Controller\n"
+		(exclude_from_sim no)
+		(at 401.32 95.25 0)
+		(effects
+			(font
+				(size 12 12)
+			)
+			(justify left bottom)
+		)
+		(uuid "82734d6b-7770-4579-91b3-784c3706b5ec")
+	)
+	(text "Connectors"
+		(exclude_from_sim no)
+		(at 232.41 96.52 0)
+		(effects
+			(font
+				(size 12 12)
+			)
+			(justify left bottom)
+		)
+		(uuid "882148b8-df13-4940-a9c8-f32536301cf2")
+	)
+	(text "Power"
+		(exclude_from_sim no)
+		(at 110.998 96.774 0)
+		(effects
+			(font
+				(size 12 12)
+			)
+			(justify left bottom)
+		)
+		(uuid "91564359-495f-4a69-9f8e-0449db86f5b0")
+	)
+	(sheet
+		(at 73.66 102.87)
+		(size 129.54 74.93)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "39f09781-d99c-4d1b-913d-bcdf98fd1e26")
+		(property "Sheetname" "Power"
+			(at 73.66 102.1584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 73.66 178.3846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 73.66 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RC-Car-Controller"
+				(path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 223.52 101.6)
+		(size 125.73 74.93)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4e5677ed-0dc8-49f6-a11b-e4c4e0cc396f")
+		(property "Sheetname" "Connectors"
+			(at 223.52 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "connectors.kicad_sch"
+			(at 223.52 177.1146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 223.52 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RC-Car-Controller"
+				(path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 378.46 104.14)
+		(size 129.54 69.85)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6dcf9c84-99b8-44d2-ad7c-5bce24334811")
+		(property "Sheetname" "ESP32-S3 Microcontroller "
+			(at 378.46 103.4284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ESP32_S3_MCU.kicad_sch"
+			(at 378.46 174.5746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 378.46 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RC-Car-Controller"
+				(path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 124.46 236.22)
+		(size 140.97 85.09)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7627e0c1-a993-485b-b38b-14ad3d8f424c")
+		(property "Sheetname" "Sensors"
+			(at 124.46 235.5084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sensors.kicad_sch"
+			(at 124.46 321.8946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 124.46 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RC-Car-Controller"
+				(path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 298.45 237.49)
+		(size 129.54 85.09)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e7259fa7-f322-44a4-a973-0690db2883d4")
+		(property "Sheetname" "Motors"
+			(at 298.45 236.7784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "motors.kicad_sch"
+			(at 298.45 323.1646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 298.45 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "RC-Car-Controller"
+				(path "/6532ed18-dd14-44a4-a4f8-6383f8135b66"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
